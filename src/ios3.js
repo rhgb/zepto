@@ -1,7 +1,9 @@
 //     Zepto.js
 //     (c) 2010-2014 Thomas Fuchs
 //     Zepto.js may be freely distributed under the MIT license.
-
+if (typeof module !== 'undefined' && module.exports) {
+    var Zepto = require('zepto');
+}
 ;(function(undefined){
   if (String.prototype.trim === undefined) // fix for iOS 3.2
     String.prototype.trim = function(){ return this.replace(/^\s+|\s+$/g, '') }

@@ -1,7 +1,9 @@
 //     Zepto.js
 //     (c) 2010-2014 Thomas Fuchs
 //     Zepto.js may be freely distributed under the MIT license.
-
+if (typeof module !== 'undefined' && module.exports) {
+    var Zepto = require('zepto');
+}
 ;(function($){
   // Create a collection of callbacks to be fired in a sequence, with configurable behaviour
   // Option flags:

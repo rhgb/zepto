@@ -3,7 +3,9 @@
 //     Zepto.js may be freely distributed under the MIT license.
 
 // The following code is heavily inspired by jQuery's $.fn.data()
-
+if (typeof module !== 'undefined' && module.exports) {
+    var Zepto = require('zepto');
+}
 ;(function($){
   var data = {}, dataAttr = $.fn.data, camelize = $.camelCase,
     exp = $.expando = 'Zepto' + (+new Date()), emptyArray = []

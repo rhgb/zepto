@@ -3,7 +3,9 @@
 //     Zepto.js may be freely distributed under the MIT license.
 //
 //     Some code (c) 2005, 2013 jQuery Foundation, Inc. and other contributors
-
+if (typeof module !== 'undefined' && module.exports) {
+    var Zepto = require('zepto');
+}
 ;(function($){
   var slice = Array.prototype.slice
 

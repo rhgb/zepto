@@ -1,3 +1,15 @@
+# Zepto Modules
+
+## Usage
+
+Please use in conjunction with `zepto`.
+
+~~~ javascript
+var $ = require('zepto');
+require('zepto-modules/src/fx');
+$.animate(/* your code here */);
+~~~
+
 # Zepto.js – a minimalist JavaScript library
 
 Zepto is a minimalist JavaScript library for modern browsers with a
